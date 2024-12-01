@@ -27,7 +27,7 @@ const RegisterPage = () => {
         setmessage(res.message);
         setisMessage(true);
         setTimeout(() => {
-          navigate("/login");
+          navigate("/signin");
         }, 2000);
       });
     } catch (error) {
@@ -82,7 +82,7 @@ const RegisterPage = () => {
           <div className="flex gap-2 mt-5">
             <h1>Sudah memiliki akun?</h1>
             <h2 className="text-blue-900">
-              <a href="/login">Sign In</a>
+              <a href="/signin">Sign In</a>
             </h2>
           </div>
         </div>

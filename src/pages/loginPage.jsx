@@ -55,7 +55,7 @@ try {
           </form>
           <div className='flex gap-2 mt-5'>
           <h1>Belum memiliki akun?</h1>
-          <h2 className='text-blue-900'><a href="/register">Sign Up</a></h2>
+          <h2 className='text-blue-900'><a href="/signup">Sign Up</a></h2>
           </div>
         </div>
       </div>

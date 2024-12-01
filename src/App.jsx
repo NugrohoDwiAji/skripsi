@@ -21,9 +21,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<Navigate to="/signin" replace />} />
+        <Route path="/signup" element={<RegisterPage />} />
+        <Route path="/signin" element={<LoginPage />} />
         <Route
           path="/dashboard"
           element={
