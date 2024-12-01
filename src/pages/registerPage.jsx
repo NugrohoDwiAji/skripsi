@@ -1,3 +1,4 @@
+import React from "react";
 import { useState} from "react";
 import { register } from "../services/auth.services";
 import { affineEncrypt } from "../services/kriptografi.services";
