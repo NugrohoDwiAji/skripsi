@@ -26,9 +26,9 @@ const RegisterPage = () => {
         console.log(res.message);
         setmessage(res.message);
         setisMessage(true);
-        // setTimeout(() => {
-        //   navigate("/login");
-        // }, 2000);
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000);
       });
     } catch (error) {
       console.log(error);

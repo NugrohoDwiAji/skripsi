@@ -6,7 +6,7 @@ const host = import.meta.env.VITE_HOST
 export const register = async (data, callback) => {
     try {
          await axios
-         .post(`https://backend-skripsi-two.vercel.app/register`, data)
+         .post(`${host}/register`, data)
          .then((res)=>{
             callback(res.data)
          });
