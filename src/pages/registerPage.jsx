@@ -8,6 +8,7 @@ const RegisterPage = () => {
   const [message, setmessage] = useState("");
   const [isMessage, setisMessage] = useState(false);
   const navigate = useNavigate();
+  const [loading, setloading] = useState(false);
   const [data, setdata] = useState({
     username: "",
     email: "",
@@ -16,7 +17,7 @@ const RegisterPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
+    setloading(true)
     const dataEncrypt = {
       username: data.username,
       email: affineEncrypt(data.email, 11, 2), 
@@ -33,6 +34,7 @@ const RegisterPage = () => {
       });
     } catch (error) {
       console.log(error);
+      setloading(fasle)
     }
   };
 
@@ -45,6 +47,12 @@ const RegisterPage = () => {
       <div className="absolute inset-0 bg-balck/10 backdrop-blur-lg flex items-center justify-center">
         <div className="h-[450px] w-[350px] shadow-2xl px-7 py-10 flex flex-col ">
           <h1 className="text-white text-4xl mb-10 text-center">Registrasi</h1>
+          {loading && (
+            <div className="-mt-6 mb-2 text-lg flex gap-2 justify-center">
+              <div className="w-8 h-8 border-[4px] border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+              <h1>Loading...</h1>
+            </div>
+          )}
           <form action="" className="flex flex-col gap-3 ">
             <div className="flex flex-col gap-1">
               <label htmlFor="">Username</label>
