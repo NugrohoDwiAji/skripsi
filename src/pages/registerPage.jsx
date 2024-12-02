@@ -15,25 +15,25 @@ const RegisterPage = () => {
   });
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
-    // console.log(data);
-    // const dataEncrypt = {
-    //   username: data.username,
-    //   email: affineEncrypt(data.email, 11, 2), 
-    //   password: affineEncrypt(data.password, 11, 2),
-    // };
-    // try {
-    //   register(dataEncrypt, (res) => {
-    //     console.log(res.message);
-    //     setmessage(res.message);
-    //     setisMessage(true);
-    //     setTimeout(() => {
-    //       navigate("/signin");
-    //     }, 2000);
-    //   });
-    // } catch (error) {
-    //   console.log(error);
-    // }
+    e.preventDefault();
+    console.log(data);
+    const dataEncrypt = {
+      username: data.username,
+      email: affineEncrypt(data.email, 11, 2), 
+      password: affineEncrypt(data.password, 11, 2),
+    };
+    try {
+      register(dataEncrypt, (res) => {
+        console.log(res.message);
+        setmessage(res.message);
+        setisMessage(true);
+        setTimeout(() => {
+          navigate("/signin");
+        }, 2000);
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
 
