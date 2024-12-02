@@ -12,7 +12,7 @@ const Header = () => {
     };
 
   return (
-    <div className="bg-white w-full h-16 border-b-2 px-[9.2rem] flex items-center justify-between">
+    <div className="bg-white w-full h-16 border-b-2 lg:px-[9.2rem] px-4 flex items-center justify-between">
       <div className="flex items-center gap-5">
         <img src="/ubg.png" alt="ubg" className="h-12" />
         <a href="">Dashboard</a>

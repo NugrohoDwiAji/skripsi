@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem("token"); // Periksa token di localStorage
   if (!token) {
     alert("Akses ditolak. Anda harus login terlebih dahulu."); // Opsional: pemberitahuan kepada pengguna
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/signin" replace />;
   }
     return children;
 };
