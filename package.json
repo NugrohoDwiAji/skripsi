@@ -1,7 +1,7 @@
 {
   "name": "loginskripsi",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://skripsi-iota-two.vercel.app",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
